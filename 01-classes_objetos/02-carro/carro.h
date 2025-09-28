@@ -10,5 +10,10 @@ class Carro {
         string cor;
 
     public:
-        Carro(); // Construtor padrão
-}
+        // Construtor padrão
+        Carro(); 
+        
+        // Métodos set e get do modelo
+        void setModelo(string modelo);
+        string getModelo();
+};
