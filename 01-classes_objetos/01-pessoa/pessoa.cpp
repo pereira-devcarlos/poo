@@ -26,10 +26,28 @@ void Pessoa::setIdade(int idade){
     }
 }
 
+// Retorna o nome da pessoa
+string Pessoa::getNome() {
+    return nome;
+}
+
+// Retorna a idade da pessoa
+int Pessoa::getIdade() {
+    return idade;
+}  
+
+// Verifica se a pessoa pode dirigir (idade >= 18)
+bool Pessoa::podeDirigir(){
+    return idade >= 18;
+}
+
 int main(){
     Pessoa p1;
     p1.setNome("João");
     p1.setIdade(20);
+    cout << "Nome: " << p1.getNome() << endl;
+    cout << "Idade: " << p1.getIdade() << endl;
+    cout << "Pode dirigir? " << (p1.podeDirigir() ? "Sim" : "Não") << endl;
 
     return 0;
 }
