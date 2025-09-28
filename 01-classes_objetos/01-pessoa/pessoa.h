@@ -10,7 +10,6 @@ class Pessoa {
         string nome;
         char sexo;
         int idade;
-        bool usaOculos;
 
     // Métodos(funções) da classe Pessoa
     public:

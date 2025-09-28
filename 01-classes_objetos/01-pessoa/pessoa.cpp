@@ -9,7 +9,6 @@ Pessoa::Pessoa() {
     nome = "Sem nome";
     sexo = 'M';
     idade = 0;
-    usaOculos = false;
 }
 
 // Define o nome da pessoa
