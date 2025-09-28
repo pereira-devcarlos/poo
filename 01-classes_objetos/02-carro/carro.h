@@ -16,4 +16,8 @@ class Carro {
         // Métodos set e get do modelo
         void setModelo(string modelo);
         string getModelo();
+
+        // Métodos set e get do ano
+        void setAno(int ano);
+        int getAno();
 };
