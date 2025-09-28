@@ -3,6 +3,14 @@
 
 using namespace std;
 
+/** Métodos a fazer 
+ * * * * * * * * * * * 
+ * Construtor de cópia
+ * Copiar
+ * Imprimir
+ * Preencher
+ */
+
 // Implementação dos métodos da classe Pessoa
 // Construtor padrão da classe Pessoa
 Pessoa::Pessoa() {
