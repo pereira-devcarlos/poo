@@ -13,11 +13,13 @@ class Carro {
         // Construtor padrão
         Carro(); 
         
-        // Métodos set e get do modelo
+        // Métodos set's do Carro
         void setModelo(string modelo);
-        string getModelo();
-
-        // Métodos set e get do ano
         void setAno(int ano);
+        void setCor(string cor);
+        
+        // Métodos get's do Carro
+        string getModelo();
         int getAno();
+        string getCor();
 };

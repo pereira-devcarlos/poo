@@ -14,10 +14,6 @@ void Carro::setModelo(string modelo){
     this->modelo = modelo;
 }
 
-string Carro::getModelo(){
-    return modelo;
-}
-
 void Carro::setAno(int ano){
     if (ano > 1890 && ano <= 2025){
         this->ano = ano;
@@ -26,8 +22,20 @@ void Carro::setAno(int ano){
     }
 }
 
+void Carro::setCor(string cor){
+    this->cor = cor;
+}
+
+string Carro::getModelo(){
+    return modelo;
+}
+
 int Carro::getAno(){
     return ano;
+}
+
+string Carro::getCor(){
+    return cor;
 }
 
 int main() {
