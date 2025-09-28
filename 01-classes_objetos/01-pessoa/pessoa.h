@@ -3,17 +3,21 @@
 
 using namespace std;
 
+// Definição da classe Pessoa
 class Pessoa {
-private:
-    string nome;
-    char sexo;
-    int idade;
-    bool usaOculos;
-public:
-    Pessoa();
-    void setNome(const string& nome);
-    void setIdade(int idade);
-    string getNome();
-    int getIdade();
-    bool podeDirigir();
+    // Atributos(variáveis) da classe Pessoa
+    private:
+        string nome;
+        char sexo;
+        int idade;
+        bool usaOculos;
+
+    // Métodos(funções) da classe Pessoa
+    public:
+        Pessoa();
+        void setNome(const string& nome);
+        void setIdade(int idade);
+        string getNome();
+        int getIdade();
+        bool podeDirigir();
 };

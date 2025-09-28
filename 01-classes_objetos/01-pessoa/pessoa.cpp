@@ -42,12 +42,15 @@ bool Pessoa::podeDirigir(){
 }
 
 int main(){
+    // Construindo um objeto da classe Pessoa
     Pessoa p1;
-    p1.setNome("João");
+
+    // Testando os métodos da classe Pessoa
+    p1.setNome("Joao");
     p1.setIdade(20);
     cout << "Nome: " << p1.getNome() << endl;
     cout << "Idade: " << p1.getIdade() << endl;
-    cout << "Pode dirigir? " << (p1.podeDirigir() ? "Sim" : "Não") << endl;
+    cout << "Pode dirigir? " << (p1.podeDirigir() ? "Sim" : "Nao") << endl;
 
     return 0;
 }
