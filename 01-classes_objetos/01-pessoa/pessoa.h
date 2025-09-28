@@ -11,7 +11,6 @@ private:
     bool usaOculos;
 public:
     Pessoa();
-    int getIdade();
+    void setNome(const string& nome);
     void setIdade(int idade);
-    bool podeDirigir();
 };
