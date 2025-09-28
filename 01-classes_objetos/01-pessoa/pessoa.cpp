@@ -9,6 +9,7 @@ Pessoa::Pessoa() {
     nome = "Sem nome";
     sexo = 'M';
     idade = 0;
+    habilitacao = false;
 }
 
 // Define o nome da pessoa
@@ -25,6 +26,10 @@ void Pessoa::setIdade(int idade){
     }
 }
 
+void Pessoa::setHab(bool habilitacao){
+    this->habilitacao = habilitacao;
+}
+
 // Retorna o nome da pessoa
 string Pessoa::getNome() {
     return nome;
@@ -37,5 +42,5 @@ int Pessoa::getIdade() {
 
 // Verifica se a pessoa pode dirigir (idade >= 18)
 bool Pessoa::podeDirigir(){
-    return idade >= 18;
+    return habilitacao;
 }

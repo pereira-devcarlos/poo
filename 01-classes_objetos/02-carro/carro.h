@@ -22,4 +22,6 @@ class Carro {
         string getModelo();
         int getAno();
         string getCor();
+
+        void dirigir(bool habilitacao);
 };

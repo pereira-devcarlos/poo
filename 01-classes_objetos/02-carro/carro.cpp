@@ -8,6 +8,7 @@ Carro::Carro() {
     modelo = "Sem modelo";
     ano = 0;
     cor = "Sem cor";
+    
 }
 
 void Carro::setModelo(string modelo){
@@ -36,4 +37,12 @@ int Carro::getAno(){
 
 string Carro::getCor(){
     return cor;
+}
+
+void Carro::dirigir(bool habilitacao){
+    if (habilitacao){
+        cout << "pode digirir esse " << this->getModelo() << endl;
+    } else {
+        cout << "nao pode dirigir, pois nao possui habilitacao!" << endl;
+    }
 }

@@ -10,12 +10,14 @@ class Pessoa {
         string nome;
         char sexo;
         int idade;
+        bool habilitacao;
 
     // Métodos(funções) da classe Pessoa
     public:
         Pessoa();
         void setNome(const string& nome);
         void setIdade(int idade);
+        void setHab(bool habilitacao);
         string getNome();
         int getIdade();
         bool podeDirigir();
