@@ -97,7 +97,9 @@ void Pessoa::imprimir(){
     cout << "\nNome: " << getNome() << endl;
     cout << "Sexo: " << getSexo() << endl;
     cout << "Idade: " << getIdade() << endl;
-    cout << "Habilitacao: " << podeDirigir() << endl;
+
+    string hab = podeDirigir() ? "Sim" : "Nao";
+    cout << "Habilitado(a): " << hab << endl;
 }
 
 // Copia os dados de outra pessoa
