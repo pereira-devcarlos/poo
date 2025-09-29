@@ -19,6 +19,7 @@ class Pessoa {
         Pessoa(const Pessoa& copiar);
 
         // Métodos set's
+        void preencher();
         void setNome(const string& nome);
         void setSexo(char sexo);
         void setIdade(int idade);

@@ -14,7 +14,8 @@ int main(){
     p1.setHab(true);
     p1.imprimir();
 
-    Pessoa p2(p1);
+    Pessoa p2;
+    p2.preencher();
     p2.imprimir();
 
     car1.setModelo("Golf");

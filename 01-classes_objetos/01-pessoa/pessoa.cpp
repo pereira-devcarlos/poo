@@ -8,7 +8,7 @@ using namespace std;
  * Construtor de cópia (feita)
  * Imprimir            (feita)
  * Copiar
- * Preencher
+ * Preencher           (feita)
  */
 
 // Implementação dos métodos da classe Pessoa
@@ -26,6 +26,32 @@ Pessoa::Pessoa(const Pessoa& copiar){
     this->sexo = copiar.sexo;
     this->idade = copiar.idade;
     this->habilitacao = copiar.habilitacao;
+}
+
+// Preenche os dados da pessoa
+void Pessoa::preencher(){
+    string nome;
+    char sexo;
+    int idade;
+    bool habilitacao;
+
+    cout << "\nPreencha os dados da pessoa:" << endl;
+    cout << "Nome: ";
+    cin >> nome;
+    setNome(nome);
+
+    cout << "Sexo (M/F): ";
+    cin >> sexo;
+    sexo = toupper(sexo);
+    setSexo(sexo);
+
+    cout << "Idade: ";
+    cin >> idade;
+    setIdade(idade);
+
+    cout << "Habilitacao (1 - sim / 0 - nao): ";
+    cin >> habilitacao;
+    setHab(habilitacao);
 }
 
 // Define o nome da pessoa
