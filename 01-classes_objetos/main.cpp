@@ -12,8 +12,10 @@ int main(){
     p1.setSexo('M');
     p1.setIdade(20);
     p1.setHab(true);
+    p1.imprimir();
 
     Pessoa p2(p1);
+    p2.imprimir();
 
     car1.setModelo("Golf");
     car1.setAno(2016);

@@ -21,6 +21,8 @@ class Pessoa {
         void setIdade(int idade);
         void setHab(bool habilitacao);
         string getNome();
+        char getSexo();
         int getIdade();
         bool podeDirigir();
+        void imprimir();
 };

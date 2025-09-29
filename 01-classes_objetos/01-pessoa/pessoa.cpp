@@ -5,9 +5,9 @@ using namespace std;
 
 /** Métodos a fazer 
  * * * * * * * * * * * 
- * Construtor de cópia
+ * Construtor de cópia (feita)
  * Copiar
- * Imprimir
+ * Imprimir (feita)
  * Preencher
  */
 
@@ -20,6 +20,7 @@ Pessoa::Pessoa() {
     habilitacao = false;
 }
 
+// Construtor de cópia da classe Pessoa
 Pessoa::Pessoa(const Pessoa& copiar){
     this->nome = copiar.nome;
     this->sexo = copiar.sexo;
@@ -54,6 +55,10 @@ string Pessoa::getNome() {
     return nome;
 }
 
+char Pessoa::getSexo() {
+    return sexo;
+}
+
 // Retorna a idade da pessoa
 int Pessoa::getIdade() {
     return idade;
@@ -62,4 +67,11 @@ int Pessoa::getIdade() {
 // Verifica se a pessoa pode dirigir (idade >= 18)
 bool Pessoa::podeDirigir(){
     return habilitacao;
+}
+
+void Pessoa::imprimir(){
+    cout << "\nNome: " << getNome() << endl;
+    cout << "Sexo: " << getSexo() << endl;
+    cout << "Idade: " << getIdade() << endl;
+    cout << "Habilitacao: " << podeDirigir() << endl;
 }
