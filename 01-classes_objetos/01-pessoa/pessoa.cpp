@@ -28,32 +28,6 @@ Pessoa::Pessoa(const Pessoa& copiar){
     this->habilitacao = copiar.habilitacao;
 }
 
-// Preenche os dados da pessoa
-void Pessoa::preencher(){
-    string nome;
-    char sexo;
-    int idade;
-    bool habilitacao;
-
-    cout << "\nPreencha os dados da pessoa:" << endl;
-    cout << "Nome: ";
-    cin >> nome;
-    setNome(nome);
-
-    cout << "Sexo (M/F): ";
-    cin >> sexo;
-    sexo = toupper(sexo);
-    setSexo(sexo);
-
-    cout << "Idade: ";
-    cin >> idade;
-    setIdade(idade);
-
-    cout << "Habilitacao (1 - sim / 0 - nao): ";
-    cin >> habilitacao;
-    setHab(habilitacao);
-}
-
 // Define o nome da pessoa
 void Pessoa::setNome(const string& nome){
     this->nome = nome;
@@ -95,9 +69,44 @@ bool Pessoa::podeDirigir(){
     return habilitacao;
 }
 
+// Preenche os dados da pessoa
+void Pessoa::preencher(){
+    string nome;
+    char sexo;
+    int idade;
+    bool habilitacao;
+
+    cout << "\nPreencha os dados da pessoa:" << endl;
+    cout << "Nome: ";
+    cin >> nome;
+    setNome(nome);
+
+    cout << "Sexo (M/F): ";
+    cin >> sexo;
+    sexo = toupper(sexo);
+    setSexo(sexo);
+
+    cout << "Idade: ";
+    cin >> idade;
+    setIdade(idade);
+
+    cout << "Habilitacao (1 - sim / 0 - nao): ";
+    cin >> habilitacao;
+    setHab(habilitacao);
+}
+
+// Imprime os dados da pessoa
 void Pessoa::imprimir(){
     cout << "\nNome: " << getNome() << endl;
     cout << "Sexo: " << getSexo() << endl;
     cout << "Idade: " << getIdade() << endl;
     cout << "Habilitacao: " << podeDirigir() << endl;
+}
+
+// Copia os dados de outra pessoa
+void Pessoa::copiar(const Pessoa& outra){
+    this->nome = outra.nome;
+    this->sexo = outra.sexo;
+    this->idade = outra.idade;
+    this->habilitacao = outra.habilitacao;
 }

@@ -19,18 +19,19 @@ class Pessoa {
         Pessoa(const Pessoa& copiar);
 
         // Métodos set's
-        void preencher();
         void setNome(const string& nome);
         void setSexo(char sexo);
         void setIdade(int idade);
         void setHab(bool habilitacao);
-
+        
         // Métodos get's
         string getNome();
         char getSexo();
         int getIdade();
         bool podeDirigir();
-
+        
         // Outros métodos
+        void preencher();
         void imprimir();
+        void copiar(const Pessoa& outra);
 };
