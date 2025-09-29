@@ -5,15 +5,15 @@
 using namespace std;
 
 int main(){
-    Pessoa p1, p2;
+    Pessoa p1; 
     Carro car1;
 
     p1.setNome("Carlos");
+    p1.setSexo('M');
     p1.setIdade(20);
     p1.setHab(true);
 
-    p2.setNome("Ana");
-    p2.setIdade(18);
+    Pessoa p2(p1);
 
     car1.setModelo("Golf");
     car1.setAno(2016);

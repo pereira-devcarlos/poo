@@ -20,9 +20,20 @@ Pessoa::Pessoa() {
     habilitacao = false;
 }
 
+Pessoa::Pessoa(const Pessoa& copiar){
+    this->nome = copiar.nome;
+    this->sexo = copiar.sexo;
+    this->idade = copiar.idade;
+    this->habilitacao = copiar.habilitacao;
+}
+
 // Define o nome da pessoa
 void Pessoa::setNome(const string& nome){
     this->nome = nome;
+}
+
+void Pessoa::setSexo(char sexo){
+    this->sexo = sexo;
 }
 
 // Define a idade da pessoa com validação

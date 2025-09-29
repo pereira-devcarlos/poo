@@ -15,7 +15,9 @@ class Pessoa {
     // Métodos(funções) da classe Pessoa
     public:
         Pessoa();
+        Pessoa(const Pessoa& copiar);
         void setNome(const string& nome);
+        void setSexo(char sexo);
         void setIdade(int idade);
         void setHab(bool habilitacao);
         string getNome();
