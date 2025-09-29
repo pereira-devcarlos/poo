@@ -3,14 +3,6 @@
 
 using namespace std;
 
-/** Métodos a fazer 
- * * * * * * * * * * * 
- * Construtor de cópia (feita)
- * Imprimir            (feita)
- * Copiar
- * Preencher           (feita)
- */
-
 // Implementação dos métodos da classe Pessoa
 // Construtor padrão da classe Pessoa
 Pessoa::Pessoa() {
@@ -33,6 +25,7 @@ void Pessoa::setNome(const string& nome){
     this->nome = nome;
 }
 
+// Define o sexo da pessoa
 void Pessoa::setSexo(char sexo){
     this->sexo = sexo;
 }
@@ -46,6 +39,7 @@ void Pessoa::setIdade(int idade){
     }
 }
 
+// Define se a pessoa possui habilitação
 void Pessoa::setHab(bool habilitacao){
     this->habilitacao = habilitacao;
 }
@@ -55,6 +49,7 @@ string Pessoa::getNome() {
     return nome;
 }
 
+// Retorna o sexo da pessoa
 char Pessoa::getSexo() {
     return sexo;
 }
@@ -71,6 +66,7 @@ bool Pessoa::podeDirigir(){
 
 // Preenche os dados da pessoa
 void Pessoa::preencher(){
+    // Dados pessoais
     string nome;
     char sexo;
     int idade;
@@ -83,6 +79,7 @@ void Pessoa::preencher(){
 
     cout << "Sexo (M/F): ";
     cin >> sexo;
+    // Converte para maiúscula
     sexo = toupper(sexo);
     setSexo(sexo);
 
