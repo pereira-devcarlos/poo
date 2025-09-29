@@ -6,8 +6,8 @@ using namespace std;
 /** Métodos a fazer 
  * * * * * * * * * * * 
  * Construtor de cópia (feita)
+ * Imprimir            (feita)
  * Copiar
- * Imprimir (feita)
  * Preencher
  */
 
